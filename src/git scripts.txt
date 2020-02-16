@@ -1,0 +1,10 @@
+git init
+git status
+git add pom.xml
+git add src
+git status
+ 
+ git commit -m "First mile stone"
+git remote add TechnicalBlog https://github.com/mayankchugh1977/TechnicalBlogApplication.git
+
+git push origin master
