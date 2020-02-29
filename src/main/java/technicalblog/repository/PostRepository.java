@@ -2,6 +2,7 @@ package technicalblog.repository;
 
 import org.springframework.stereotype.Repository;
 import technicalblog.model.Post;
+import technicalblog.model.User;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -46,6 +47,14 @@ public class PostRepository {
 
     public Post getPost(Integer postId) {
         EntityManager em = emf.createEntityManager();
+
+//        TypedQuery<Post> typedQuery = em.createQuery("Select p from Post p  where p.id = :postId", Post.class);
+//
+//        typedQuery.setParameter("postId", postId);
+//
+//        return typedQuery.getSingleResult();
+//    }
+
         return em.find(Post.class, postId);
     }
 
