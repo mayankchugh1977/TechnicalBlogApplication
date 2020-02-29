@@ -19,6 +19,7 @@ public class User {
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "profile_id")
+//    @Transient
     private UserProfile profile;
 
     public Integer getId() {
