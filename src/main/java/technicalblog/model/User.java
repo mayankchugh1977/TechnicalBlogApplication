@@ -24,7 +24,7 @@ public class User {
 //    @Transient
     private UserProfile profile;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
     private List<Post> posts = new ArrayList<>();
 
     public Integer getId() {
