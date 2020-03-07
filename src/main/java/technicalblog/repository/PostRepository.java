@@ -49,9 +49,7 @@ public class PostRepository {
         EntityManager em = emf.createEntityManager();
 
 //        TypedQuery<Post> typedQuery = em.createQuery("Select p from Post p  where p.id = :postId", Post.class);
-//
 //        typedQuery.setParameter("postId", postId);
-//
 //        return typedQuery.getSingleResult();
 //    }
 
